@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>作业1</title>
+		<style>
+			/*基础样式*/
+			article,section,p,ul,li,div,img,h2 {
+				margin: 0;
+				padding: 0;
+				font: 14px/24px "微软雅黑";
+				color: #8b8b8b;
+			}
+			a {
+				text-decoration: none;
+			}
+			.clearfix {
+				*zoom: 1;				/*FOR IE6*/
+			}
+			.clearfix:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			article {
+				width: 751px;
+				height: 443px;
+				margin: 0 auto;
+				margin-top: 50px;
+				padding: 15px;
+			}
+			.hd {
+				width: 751px;
+				position: relative;
+			}
+			.hd .img {
+				float: left;
+			}
+			.right {
+				float: left;
+				margin-left: 21px;
+				width: 390px;				
+			}			
+			.title_link {
+				color: #000000;
+				font-size: 22px;
+				line-height: 22px;
+				font-weight: bold;
+			}
+			.des {
+				margin-top: 10px;
+			}
+			.static {
+				margin-top: 20px;
+			}
+			.static span {
+				color: #e66e62;
+			}
+			.rate {
+				position: relative;
+				width: 100%;
+				height: 60px;
+				padding: 8px 0 10px;
+			}
+			.rate img {
+				float: left;
+				margin-right: 24px;
+			}
+			.answer {
+				float: right;
+				line-height: 60px;
+			}
+			.answer a {
+				color: #8b8b8b;
+			}
+			
+			/*列表部分*/
+			.list {
+				width: 730px;
+				position: relative;
+				margin-top: 18px;				
+			}
+			ul {
+				color: #35b558;
+			}
+			li {
+				width: 100%;
+				height: 34px;
+				margin-left: 20px;
+				list-style-image: url(img/dot.png) ;
+			}
+			li a {
+				color: #353535;
+				font-size: 18px; 
+			}
+			li a:hover {
+				color: #35b558;
+			}
+			li span {
+				float: right;
+				line-height: 34px;
+			}
+		</style>
+	</head>
+	<body>
+		<article>
+			<section class="hd clearfix">
+				<a href="#"><img src="img/img1.png" alt="img1" class="img"/></a>
+				<div class="right">
+					<h2><a href="#" class="title_link">打鸡血能使人兴奋？</a></h2>
+					<p class="des">"看你兴奋得那样，跟打了鸡血似的"，已经成了人所共知的调侃兴奋过度的俚语。这个说法有道理吗？打鸡血真的会让人兴奋吗？</p>
+					<p class="static">255900人参与，<span>23%</span>人错了</p>
+					<div class="rate">
+						<a href="#"><img src="img/true.png" alt="true" /></a>
+						<a href="#"><img src="img/false.png" alt="false" /></a>
+						<p class="answer "><a href="#">求真相</a></p>
+					</div>
+				</div>
+			</section>
+			<section class="list">
+				<ul>
+					<li><a href="#">马桶冲水时最好盖上马桶盖？</a><span class="view">阅读（3344400）</span></li>
+					<li><a href="#">坐月子不能喝水，要用米酒代替？</a><span class="view">阅读（3344400）</span></li>
+					<li><a href="#">水果分“公母”，品质有差别？</a><span class="view">阅读（3344400）</span></li>
+					<li><a href="#">海水会越来越咸？</a><span class="view">阅读（3344400）</span></li>
+					<li><a href="#">一天只能吃一个鸡蛋，多了不吸收？</a><span class="view">阅读（3344400）</span></li>
+				</ul>
+			</section>
+		</article>
+	</body>
+</html>

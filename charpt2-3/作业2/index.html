@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>作业2</title>
+		<style>
+			body,div,article,section,p,ul,li,img {
+				margin: 0;
+				padding: 0;
+				font-size: 12px;
+			}
+			article {
+				width: 525px;
+				height: 361px;
+				margin: 0 auto;
+				margin-top: 50px;
+				padding: 20px;
+				border: 1px solid #EEEEEE;
+			} 
+				margin-right: 0;
+			}
+			ul {
+				list-style: none;
+				
+			}
+			ul.sorting {
+				margin-bottom: 6px;  
+			}
+			ul.filter {
+				margin-bottom: 20px;
+			}
+			li {
+				display: inline-block;
+				height: 25px;
+				font-size: 12px;
+				line-height: 25px;
+				margin-right: 7px;
+			}
+			li a {
+				display: inline-block;
+				height: 25px;
+				padding: 0 5px;
+				text-decoration: none;
+				color: #000;				
+			}
+			li a:hover,.active {
+				background-color: #45a4fc;
+			}
+			section.content {
+				height: 285px;
+			}
+			.pic {
+				width: 155px;
+				height: 254px;
+				display: inline-block;
+				text-align: center;
+				margin-right: 25px;
+				margin-top: 30px;
+				line-height: 12px;
+			}
+			.pic a {				
+				text-decoration: none;
+				color: #000;
+			}
+			a.name {
+				display: inline-block;
+				padding-top: 23px;				
+			}
+			.price {
+				padding-top: 9px;
+				color:#f95f54;
+			}
+			a.btn {
+				display: inline-block;
+				padding: 0 16px;
+				height: 30px;
+				line-height: 30px;
+				color: #FFFFFF;
+				background-color: #0d76cf;
+				margin-top: 13px;
+			}
+			.last {
+				margin-right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<article class="container">
+			<section class="hd">
+				<ul class="sorting">
+					<li>排序方式:</li>
+					<li><a href="#" class="active">默认</a></li>
+					<li>|</li>
+					<li><a href="#">按上架时间</a></li>
+					<li>|</li>
+					<li><a href="#">按财富值</a></li>
+					<li>|</li>
+					<li><a href="#">按兑换量</a></li>					
+				</ul>
+				<ul class="filter">
+					<li>按财富值筛选:</li>
+					<li><a href="#" class="active">全部</a></li>
+					<li>|</li>
+					<li><a href="#">0-5000</a></li>
+					<li>|</li>
+					<li><a href="#">5001-10000</a></li>
+					<li>|</li>
+					<li><a href="#">10001-50000</a></li>
+					<li>|</li>
+					<li><a href="#">50000以上</a></li>
+				</ul>
+			</section>
+			<section class="content">
+				<div class="pic">
+					<img src="img/img1.png" alt="img1" /><p><a href="#" class="name">现代简约书桌</a></p>
+					<p class="price">999财富值</p>
+					<p><a href="#" class="btn">立即兑换</a></p>
+				</div>
+				<div class="pic">
+					<img src="img/img1.png" alt="img1" /><p><a href="#" class="name">现代简约书桌</a></p>
+					<p class="price">999财富值</p>
+					<p><a href="#" class="btn">立即兑换</a></p>
+				</div>
+				<div class="pic last">
+					<img src="img/img1.png" alt="img1" /><p><a href="#" class="name">现代简约书桌</a></p>
+					<p class="price">999财富值</p>
+					<p><a href="#" class="btn">立即兑换</a></p>
+				</div>
+			</section>
+		</article>
+	</body>
+</html>

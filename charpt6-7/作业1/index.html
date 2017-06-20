@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>作业1</title>
+		<style>
+			/*基础样式*/
+			body,p,div,h2,h3 {
+				margin: 0;
+				padding: 0;
+				font: 12px/20px "微软雅黑";
+				color: #818181;
+			}
+			th,td {
+				padding: 0;
+				text-align: center;	
+			}
+			a {
+				text-decoration: none;
+			}
+			
+			/*表格样式*/
+			table.main {
+				width: 940px;
+				height: 532px;
+				border: 1px solid #fd6620;
+				margin: 0 auto;
+				margin-top: 100px;
+				border-collapse: collapse;
+			}
+			
+			table.main td.maintd {				
+				border-right: 1px solid #fd6620;
+			}
+			thead td.caption {
+				position: relative;
+				height: 46px;
+				padding: 22px 0 14px 0;
+				border-bottom: 1px solid #eeeeee;
+				background: url(img/img2.png) no-repeat 30px 23px ;
+			}
+			thead img {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			thead h2 {
+				text-align: left;
+				margin-left: 96px;
+				font: 18px/26px "微软雅黑";
+				color: #000000;
+			}
+			thead span {
+				text-align: left;	
+				font: 12px/16px "微软雅黑";
+				color: #fff;
+				background: #ffc600;	
+				display: inline-block;
+				width: 66px;
+				height: 16px;		
+				margin-left: 6px;
+				text-align: center;
+			}
+			thead p {				
+				text-align: left;
+				margin-left: 96px;
+				font: 12px/20px "微软雅黑";
+				color: #333333;
+			}
+			
+			
+			table.child1 {
+				border-spacing: 18px 0;
+				/*background: lightblue;*/
+				width: 930px;
+				height: 98px;
+				margin: 0;
+				padding: 0;		
+				border-width:0px; 
+				border-style:hidden;
+			}			
+			table.child1 tr td {
+				padding: 19px 0 20px 0;
+				border-bottom: 1px dotted #EEEEEE;
+				border-right: none;
+			}
+			table.child1 tr h3 {
+				font: 20px/24px "微软雅黑";
+				color: #000000;
+			}
+			table.child1 tr p {
+				font: 12px/16px "微软雅黑";
+				color: #a5a5a5;
+			}
+			
+			
+			table.child2 {
+				width: 940px;
+				border-spacing: 9px 18px;
+				height: 350px;
+			}
+			
+			table.child2 td.hasborder {
+				border-right: 1px dashed #EEEEEE;
+				padding: 
+			}
+			table.child2 td.noborder {
+				border: none;
+			}
+			table.child2 td span {
+				color: #000000;
+			}
+			table.child2 td p span.price {
+				color: #ff6701;
+				font: 18px/18px "微软雅黑";
+			}
+			table.child2 td p span.small-price {
+				color: #ff6701;
+			}
+			table.child2 td p.discount {
+				width: 63px;
+				height: 30px;
+				border: 1px solid #fd6620;
+				color: #fd6620;
+				line-height: 30px;
+			}
+			table.child2 td p.btn {
+				text-align: center;
+				margin: 0 auto;
+			}
+			table.child2 td p.btn a {
+				display: inline-block;
+				line-height: 36px;
+				background: #fd6620;
+				color: #fff;
+				width: 140px;
+				height: 36px;				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<table class="main">
+			<thead >
+				<tr>
+					<td colspan="8" class="caption">
+						<img src="img/img1.png" alt="img1" class="promo" />
+						<h2>独享虚拟主机<span>标准&nbsp;|&nbsp;高效</span></h2>					
+						<p>独立IP、不限流量、独享服务器资源，易推广，更快速</p>
+					</td>
+				</tr>
+			</thead>			
+				<tr>
+					<td class="maintd">
+						<table class="child1" frame="void">
+							<tr>
+								<td><h3>独享普惠版</h3><p>适合初创型中小企业网站</p></td>
+								<td><h3>独享专业版</h3><p>适合企业、政府、社区网站</p></td>
+								<td><h3>独享尊贵版</h3><p>适合电商、视频、团购类网站</p></td>
+								<td><h3>独享旗舰版</h3><p>适合大型电商、团购类网站</p></td>
+							</tr>
+						</table>
+					</td>					
+				</tr>
+				<tr>
+					<td class="maintd">
+						<table class="child2">
+							<tr>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+							</tr>
+							<tr>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+							</tr>
+							<tr>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+								<td class="hasborder"><p>网页空间</p><span>20G</span></td>
+								<td class="noborder"><p>网页空间</p><span>20G</span></td>
+							</tr>
+							<tr>
+								<td colspan="2"><p><span class="price">75</span>元/月起</p></td>
+								<td colspan="2"><p><span class="price">75</span>元/月起</p></td>
+								<td colspan="2"><p><span class="price">75</span>元/月起</p></td>
+								<td colspan="2"><p><span class="price">75</span>元/月起</p></td>
+							</tr>
+							<tr>
+								<td><p><span class="small-price">75</span>元/年起</p></td>
+								<td><p class="discount">年付8.5折</p></td>
+								<td><p><span class="small-price">75</span>元/年起</p></td>
+								<td><p class="discount">年付8.5折</p></td>
+								<td><p><span class="small-price">75</span>元/年起</p></td>
+								<td><p class="discount">年付8.5折</p></td>
+								<td><p><span class="small-price">75</span>元/年起</p></td>
+								<td><p class="discount">年付8.5折</p></td>
+							</tr>
+							<tr>
+								<td colspan="2"><p class="btn"><a href="#">立即购买</a></p></td>
+								<td colspan="2"><p class="btn"><a href="#">立即购买</a></p></td>
+								<td colspan="2"><p class="btn"><a href="#">立即购买</a></p></td>
+								<td colspan="2"><p class="btn"><a href="#">立即购买</a></p></td>
+							</tr>
+						</table>
+					</td>					
+				</tr>
+			
+		</table>
+	</body>
+</html>
