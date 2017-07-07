@@ -1,0 +1,246 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: none;
+}
+body {
+	font:14px/60px "微软雅黑";
+	color: #000000;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.clearfix {
+	zoom:1;
+}
+.container {
+	width: 998px;
+	height: 663px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.container .box-hd {
+	height: 50px;
+	background: #f4eff4;
+	border: 1px solid #dddddd;
+	margin-bottom: 19px;
+}
+.container .box-hd ul {
+	list-style: none;
+	position: relative;
+}
+.container .box-hd ul li {
+	float: left;
+}
+input.checkbox {
+	width: 18px;
+	height: 18px;
+	margin: 0 10px;
+}
+.container .box-hd p {
+	font:14px/50px "微软雅黑";
+}
+.container .box-hd li:nth-child(2) {
+	width: 102px;
+	text-align: left;
+}
+.container .box-hd li:nth-child(3) {
+	margin-left: 46px;
+	width: 243px;
+	text-align: left;
+}
+.container .box-hd li:nth-child(4),
+.container .box-hd li:nth-child(6) {
+	width: 159px;
+	text-align: center;
+}
+.container .box-hd li:nth-child(5) {
+	width: 232px;
+	text-align: center;
+}
+
+/*body*/
+.container .box-bd {
+	border: 1px solid #dddddd;
+	margin-bottom: 19px;
+} 
+.container .box-bd .goodsList {
+	position: relative;
+	list-style: none;
+}
+.container .box-bd .goodsList li {
+	height: 112px;
+	border-bottom: 1px dashed #dddddd;
+}
+.container .box-bd .goodsList li:hover {
+	background: #fefbf0;
+}
+.container .box-bd .goodsList ul {
+	list-style: none;
+	position: relative;
+}
+.container .box-bd .goodsList ul li {
+	float: left;
+	position: relative;
+}
+.container .box-bd .goodsList ul li input{
+	margin-top: 47px;
+}
+.container .box-bd .goodsList ul li img {
+	margin-top: 15px;
+	margin-left: 11px;
+	width: 80px;
+	border: 1px solid #dddddd;
+}
+.container .box-bd .goodsList ul li #goodsTitle {
+	width: 243px;
+	text-align: left;
+	margin-left: 55px;
+	padding-top: 35px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #6a696a;
+}
+.container .box-bd .goodsList ul li #colorChoice {
+	width: 243px;
+	text-align: left;
+	margin-left: 55px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #b7a483;
+}
+.container .box-bd .goodsList ul li .singlePrice {
+	width: 159px;
+	font: 14px/112px "微软雅黑";
+	color: #d90909;
+	text-align: center;
+}
+.container .box-bd .goodsList ul li .singleAddedPrice {
+	width: 159px;
+	font: 14px/112px "微软雅黑";
+	color: #d90909;
+	text-align: center;
+}
+.container .box-bd .goodsList ul li .numberBox {
+	position: relative;
+	padding: 43px 59px;
+}
+.container .box-bd .goodsList ul li .numberBox input[type='button'] {
+	float: left;
+	background: #ffffff;
+	margin-top: 0px;
+	border: 1px solid #dddddd;
+	width: 26px;
+	height: 26px;
+	outline: none;
+}
+.container .box-bd .goodsList ul li .numberBox span {
+	float: left;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	width: 58px;
+	height: 24px;
+	text-align: center;
+	font: 10px/24px "微软雅黑";
+}
+
+/*footer*/
+.container .box-ft {
+	border: 1px solid #dddddd;
+	height: 60px;
+	position: relative;
+	background: #f4eff4;
+}
+.container .box-ft .left {
+	float: left;
+}
+.container .box-ft .left p {
+	font: 14px/60px "微软雅黑";
+	text-indent: 1em;
+}
+.container .box-ft .right {
+	float: right;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+.container .box-ft .right p:nth-child(1) {
+	font: 14px/20px "微软雅黑";
+	color: #000;
+	
+}
+.container .box-ft .right p:nth-child(1) #totalPrice {
+	font: 22px/28px "微软雅黑";
+	color: #d90909;
+}
+.container .box-ft .right p:nth-child(2) {
+	font: 12px/18px "微软雅黑";
+	color: #97a499;
+}
+
+/*弹窗*/
+.container .box-bd .goodsList ul li .colorAlert {
+	width: 370px;
+	border: 1px solid #dddddd;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+	display: none;
+	z-index: 10;
+	position: absolute;
+	top: 86px;
+	left: 55px;
+	background: #FFFFFF;
+	padding: 20px;
+}
+.container .box-bd .goodsList ul li .colorAlert #arrow {
+	width: 15px;
+	height: 8px;
+	position: absolute;
+	top: -23px;
+	left: 7px;
+	border: 0;
+	z-index: 11;
+}
+.container .box-bd .goodsList ul li .colorAlert  ul {
+	list-style: none;
+	position: relative;
+}
+.container .box-bd .goodsList ul li .colorAlert ul li {
+	float: left;
+	margin-right: 12px;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border: none;
+}
+.container .box-bd .goodsList ul li .colorAlert ul li #yourColor {
+	font: 12px/50px "微软雅黑";
+	text-align: center;
+}
+.container .box-bd .goodsList ul li .colorAlert ul li img.colorThumbnail {
+	width: 48px;
+	border: 1px solid #dddddd;
+	margin: 0;
+}
+.container .box-bd .goodsList ul li .colorAlert ul li img.choiceCheckout {
+	width: 12px;
+	height: 13px;
+	border: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.container .box-bd .goodsList ul li .colorAlert #colorSubmit {
+	width: 110px;
+	height: 28px;
+	border-radius: 2px;
+	background: #b4a078;
+	color: #fff;
+	outline: none;
+	border: none;
+	margin-top:0;
+	margin-left: 53px;
+}

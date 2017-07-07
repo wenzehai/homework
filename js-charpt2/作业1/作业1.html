@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.content {
+				width: 600px;
+				height: 500px;
+				margin: 0 auto;
+				margin-top: 100px;
+				text-align: center;
+				border: 1px solid gray;
+			}
+			
+			.content form input[type='text'] {
+				width: 250px;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var arr = [-27, //数字
+					'kaivon', //字符串，不能转换为数字
+					6 - '20%', //表达式，计算后的值为NaN,含隐式转换，最后结果为-14
+					[], //空数组,返回object，
+					-5900, //数字
+					'800km', //字符串，可转换为数字
+					function() { //函数，实则为对象
+						alert('陈学辉');
+					}, , //undefined
+					'xyz' - 90, //表达式，计算结果为NaN，类型为number
+					null, //null 空值
+					'66', //字符串，可转化为数字
+					document, //对象
+					[], //空数组
+					true, //布尔值，可转化为数字
+					'198px' - 30, //表达式，可转化为数字
+					'49.9元', //字符串，可转化为数字
+					5, //数字
+					function() { //函数
+						alert(3);
+					},
+					Number('abc')
+				]; //表达式，结果是NaN
+
+				var btn = document.getElementById('btn');
+				var txt1 = document.getElementById('txt1');
+				var txt2 = document.getElementById('txt2');
+				var txt3 = document.getElementById('txt3');
+				var txt4 = document.getElementById('txt4');
+				var arr3 = [];
+				btn.onclick=function(){
+					for(var i = 0; i < arr.length; i++) {
+						//1
+						if(typeof arr[i] == 'number') {
+							if(!isNaN(arr[i])) {
+								txt1.value += arr[i] + ',';
+							};
+						};
+						//2
+						if(!isNaN(parseFloat(arr[i]))) {
+								txt2.value += arr[i] + ',';
+							};
+						//3
+						if(isNaN(arr[i] == false)){
+							arr3.push(Number(arr[i]));
+						}
+						
+						//4
+						if(arr[i] != arr[i]){
+							txt4.value += i+',';
+						}
+					};
+					var max = -Infinity;
+					for(var i=0; i<arr3.length; i++){
+						if(arr3[i]>max){
+							max=arr3[i];
+						}
+					}
+					//max = Math.max.apply(Math,arr3);
+					txt3.value=max;
+				};
+			};
+		</script>
+	</head>
+
+	<body>
+		<div class="content">
+			<br />
+			<br />
+			<textarea name="text" rows="10" cols="60">[-27,'kaivon', 6-'20%',[],-5900,'800km',function(){alert('陈学辉');},,'xyz'-90,null,'66',document,[],true,'198px'-30,'49.9元',5,function(){alert(3);},Number('abc')]
+			</textarea>
+			<br />
+			<br />
+			<input type="button" id="btn" value="查看结果" />
+			<br />
+			<br />
+			<br />
+			<form action="">
+				<label for="">所有数字：</label>
+				<input type="text" id="txt1" placeholder="数组里的某个数据本身就是数字" /><br />
+				<label for="">可以转成数字的值：</label>
+				<input type="text" id="txt2" placeholder="除了数组里的对象类型与布尔值类型" /><br />
+				<label for="">转换后的最大数字：</label>
+				<input type="text" id="txt3" placeholder="把所有数据转成数字以后，找出最大值" /><br />
+				<label for="">数组中NaN的位置：</label>
+				<input type="text" id="txt4" placeholder="每个数据运算后的值为NaN" />
+			</form>
+
+		</div>
+
+	</body>
+
+</html>
